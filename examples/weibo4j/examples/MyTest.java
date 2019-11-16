@@ -18,8 +18,8 @@ public class MyTest {
             RateLimitStatus rateLimitStatus = getAcccountRateLimitStatus();
             StatusWapper statusWapper = getFriendsTimeline();
             for (Status status : statusWapper.getStatuses()) {
-                Thread.sleep(240000);
                 createComments(commentsText, status.getId());
+                Thread.sleep(240000);
             }
         }
     }
@@ -65,6 +65,18 @@ public class MyTest {
         Timeline tm = new Timeline(accessToken);
         try {
             StatusWapper status = tm.getFriendsTimeline();
+            Log.logInfo(status.toString());
+            return status;
+        } catch (WeiboException e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
+    public static StatusWapper getHomeTimeline() {
+        Timeline tm = new Timeline(accessToken);
+        try {
+            StatusWapper status = tm.getHomeTimeline();
             Log.logInfo(status.toString());
             return status;
         } catch (WeiboException e) {

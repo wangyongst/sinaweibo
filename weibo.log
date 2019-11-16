@@ -354,3 +354,131 @@
 18306994 WARN  [2019-11-16 05:38:29]  Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
 18306994 DEBUG [2019-11-16 05:38:29]  {"error":"User requests out of rate limit!","error_code":10023,"request":"/2/statuses/friends_timeline.json"}
 
+0    DEBUG [2019-11-16 10:57:55]  Request:
+0    DEBUG [2019-11-16 10:57:55]  GET:https://api.weibo.com/2/account/rate_limit_status.json
+37   DEBUG [2019-11-16 10:57:56]  Authorization: OAuth2 2.007NF7NG2ao8gC39afd3fb4fNgZwhD
+38   DEBUG [2019-11-16 10:57:56]  API-RemoteIP: 192.168.1.13
+3035 DEBUG [2019-11-16 10:57:59]  Response:
+3035 DEBUG [2019-11-16 10:57:59]  https StatusCode:200
+3035 DEBUG [2019-11-16 10:57:59]  Server:nginx/1.6.1
+3035 DEBUG [2019-11-16 10:57:59]  Date:Sat, 16 Nov 2019 02:58:03 GMT
+3035 DEBUG [2019-11-16 10:57:59]  Content-Type:application/json;charset=UTF-8
+3035 DEBUG [2019-11-16 10:57:59]  Transfer-Encoding:chunked
+3035 DEBUG [2019-11-16 10:57:59]  Connection:keep-alive
+3035 DEBUG [2019-11-16 10:57:59]  Vary:Accept-Encoding
+3071 WARN  [2019-11-16 10:57:59]  Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+3071 DEBUG [2019-11-16 10:57:59]  {"api_rate_limits":[{"api":"/statuses/update","limit":15,"limit_time_unit":"HOURS","remaining_hits":15},{"api":"/comments/create","limit":15,"limit_time_unit":"HOURS","remaining_hits":15},{"api":"/direct_messages/new","limit":15,"limit_time_unit":"HOURS","remaining_hits":15},{"api":"/friendships/create","limit":15,"limit_time_unit":"DAYS","remaining_hits":15},{"api":"/statuses/update","limit":50,"limit_time_unit":"DAYS","remaining_hits":50},{"api":"/comments/create","limit":50,"limit_time_unit":"DAYS","remaining_hits":50},{"api":"/users/query","limit":15,"limit_time_unit":"DAYS","remaining_hits":15},{"api":"/users/query","limit":500,"limit_time_unit":"HOURS","remaining_hits":500},{"api":"/users/query","limit":1000,"limit_time_unit":"DAYS","remaining_hits":1000},{"api":"/users/query","limit":50,"limit_time_unit":"MINUTES","remaining_hits":50}],"ip_limit":1000,"limit_time_unit":"HOURS","remaining_ip_hits":1000,"remaining_user_hits":150,"reset_time":"2019-11-16 11:00:00","reset_time_in_seconds":116,"user_limit":150}
+
+3148 INFO  [2019-11-16 10:57:59]  RateLimitStatus [ipLimit=1000, remainingIpHits=1000, remainingUserHits=150, resetTime=2019-11-16 11:00:00, resetTimeInSeconds=116, userLimit=150, apiRateLimit=[api_rate_limits [api=/statuses/update, limit=15, limitTimeUnit=HOURS, remainingHits=15], api_rate_limits [api=/comments/create, limit=15, limitTimeUnit=HOURS, remainingHits=15], api_rate_limits [api=/direct_messages/new, limit=15, limitTimeUnit=HOURS, remainingHits=15], api_rate_limits [api=/friendships/create, limit=15, limitTimeUnit=DAYS, remainingHits=15], api_rate_limits [api=/statuses/update, limit=50, limitTimeUnit=DAYS, remainingHits=50], api_rate_limits [api=/comments/create, limit=50, limitTimeUnit=DAYS, remainingHits=50], api_rate_limits [api=/users/query, limit=15, limitTimeUnit=DAYS, remainingHits=15], api_rate_limits [api=/users/query, limit=500, limitTimeUnit=HOURS, remainingHits=500], api_rate_limits [api=/users/query, limit=1000, limitTimeUnit=DAYS, remainingHits=1000], api_rate_limits [api=/users/query, limit=50, limitTimeUnit=MINUTES, remainingHits=50]]]
+3150 DEBUG [2019-11-16 10:57:59]  Request:
+3150 DEBUG [2019-11-16 10:57:59]  GET:https://api.weibo.com/2/statuses/friends_timeline.json
+3150 DEBUG [2019-11-16 10:57:59]  Authorization: OAuth2 2.007NF7NG2ao8gC39afd3fb4fNgZwhD
+3150 DEBUG [2019-11-16 10:57:59]  API-RemoteIP: 192.168.1.13
+3272 DEBUG [2019-11-16 10:57:59]  Response:
+3272 DEBUG [2019-11-16 10:57:59]  https StatusCode:403
+3272 DEBUG [2019-11-16 10:57:59]  Server:nginx/1.6.1
+3272 DEBUG [2019-11-16 10:57:59]  Date:Sat, 16 Nov 2019 02:58:03 GMT
+3272 DEBUG [2019-11-16 10:57:59]  Content-Type:application/json;charset=UTF-8
+3272 DEBUG [2019-11-16 10:57:59]  Transfer-Encoding:chunked
+3272 DEBUG [2019-11-16 10:57:59]  Connection:keep-alive
+3272 DEBUG [2019-11-16 10:57:59]  Api-Server-IP:10.22.6.22
+3273 DEBUG [2019-11-16 10:57:59]  Vary:Accept-Encoding
+3273 WARN  [2019-11-16 10:57:59]  Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+3273 DEBUG [2019-11-16 10:57:59]  {"error":"User requests out of rate limit!","error_code":10023,"request":"/2/statuses/friends_timeline.json"}
+
+0    DEBUG [2019-11-16 11:09:55]  Request:
+0    DEBUG [2019-11-16 11:09:55]  GET:https://api.weibo.com/2/account/rate_limit_status.json
+34   DEBUG [2019-11-16 11:09:55]  Authorization: OAuth2 2.007NF7NG2ao8gC39afd3fb4fNgZwhD
+34   DEBUG [2019-11-16 11:09:55]  API-RemoteIP: 192.168.1.13
+3448 DEBUG [2019-11-16 11:09:59]  Response:
+3448 DEBUG [2019-11-16 11:09:59]  https StatusCode:200
+3448 DEBUG [2019-11-16 11:09:59]  Server:nginx/1.6.1
+3448 DEBUG [2019-11-16 11:09:59]  Date:Sat, 16 Nov 2019 03:10:03 GMT
+3448 DEBUG [2019-11-16 11:09:59]  Content-Type:application/json;charset=UTF-8
+3449 DEBUG [2019-11-16 11:09:59]  Transfer-Encoding:chunked
+3449 DEBUG [2019-11-16 11:09:59]  Connection:keep-alive
+3449 DEBUG [2019-11-16 11:09:59]  Vary:Accept-Encoding
+3451 WARN  [2019-11-16 11:09:59]  Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+3451 DEBUG [2019-11-16 11:09:59]  {"api_rate_limits":[{"api":"/statuses/update","limit":15,"limit_time_unit":"HOURS","remaining_hits":15},{"api":"/comments/create","limit":15,"limit_time_unit":"HOURS","remaining_hits":15},{"api":"/direct_messages/new","limit":15,"limit_time_unit":"HOURS","remaining_hits":15},{"api":"/friendships/create","limit":15,"limit_time_unit":"DAYS","remaining_hits":15},{"api":"/statuses/update","limit":50,"limit_time_unit":"DAYS","remaining_hits":50},{"api":"/comments/create","limit":50,"limit_time_unit":"DAYS","remaining_hits":50},{"api":"/users/query","limit":15,"limit_time_unit":"DAYS","remaining_hits":15},{"api":"/users/query","limit":500,"limit_time_unit":"HOURS","remaining_hits":500},{"api":"/users/query","limit":1000,"limit_time_unit":"DAYS","remaining_hits":1000},{"api":"/users/query","limit":50,"limit_time_unit":"MINUTES","remaining_hits":50}],"ip_limit":1000,"limit_time_unit":"HOURS","remaining_ip_hits":1000,"remaining_user_hits":150,"reset_time":"2019-11-16 12:00:00","reset_time_in_seconds":2996,"user_limit":150}
+
+3456 INFO  [2019-11-16 11:09:59]  RateLimitStatus [ipLimit=1000, remainingIpHits=1000, remainingUserHits=150, resetTime=2019-11-16 12:00:00, resetTimeInSeconds=2996, userLimit=150, apiRateLimit=[api_rate_limits [api=/statuses/update, limit=15, limitTimeUnit=HOURS, remainingHits=15], api_rate_limits [api=/comments/create, limit=15, limitTimeUnit=HOURS, remainingHits=15], api_rate_limits [api=/direct_messages/new, limit=15, limitTimeUnit=HOURS, remainingHits=15], api_rate_limits [api=/friendships/create, limit=15, limitTimeUnit=DAYS, remainingHits=15], api_rate_limits [api=/statuses/update, limit=50, limitTimeUnit=DAYS, remainingHits=50], api_rate_limits [api=/comments/create, limit=50, limitTimeUnit=DAYS, remainingHits=50], api_rate_limits [api=/users/query, limit=15, limitTimeUnit=DAYS, remainingHits=15], api_rate_limits [api=/users/query, limit=500, limitTimeUnit=HOURS, remainingHits=500], api_rate_limits [api=/users/query, limit=1000, limitTimeUnit=DAYS, remainingHits=1000], api_rate_limits [api=/users/query, limit=50, limitTimeUnit=MINUTES, remainingHits=50]]]
+3457 DEBUG [2019-11-16 11:09:59]  Request:
+3457 DEBUG [2019-11-16 11:09:59]  GET:https://api.weibo.com/2/statuses/home_timeline.json
+3457 DEBUG [2019-11-16 11:09:59]  Authorization: OAuth2 2.007NF7NG2ao8gC39afd3fb4fNgZwhD
+3458 DEBUG [2019-11-16 11:09:59]  API-RemoteIP: 192.168.1.13
+3673 DEBUG [2019-11-16 11:09:59]  Response:
+3673 DEBUG [2019-11-16 11:09:59]  https StatusCode:403
+3673 DEBUG [2019-11-16 11:09:59]  Server:nginx/1.6.1
+3674 DEBUG [2019-11-16 11:09:59]  Date:Sat, 16 Nov 2019 03:10:03 GMT
+3674 DEBUG [2019-11-16 11:09:59]  Content-Type:application/json;charset=UTF-8
+3674 DEBUG [2019-11-16 11:09:59]  Transfer-Encoding:chunked
+3674 DEBUG [2019-11-16 11:09:59]  Connection:keep-alive
+3674 DEBUG [2019-11-16 11:09:59]  Api-Server-IP:10.39.58.35
+3674 DEBUG [2019-11-16 11:09:59]  Vary:Accept-Encoding
+3674 WARN  [2019-11-16 11:09:59]  Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+3674 DEBUG [2019-11-16 11:09:59]  {"error":"User requests out of rate limit!","error_code":10023,"request":"/2/statuses/home_timeline.json"}
+
+0    DEBUG [2019-11-16 11:10:13]  Request:
+0    DEBUG [2019-11-16 11:10:13]  GET:https://api.weibo.com/2/account/rate_limit_status.json
+33   DEBUG [2019-11-16 11:10:13]  Authorization: OAuth2 2.007NF7NG2ao8gC39afd3fb4fNgZwhD
+33   DEBUG [2019-11-16 11:10:13]  API-RemoteIP: 192.168.1.13
+3004 DEBUG [2019-11-16 11:10:16]  Response:
+3004 DEBUG [2019-11-16 11:10:16]  https StatusCode:200
+3004 DEBUG [2019-11-16 11:10:16]  Server:nginx/1.6.1
+3004 DEBUG [2019-11-16 11:10:16]  Date:Sat, 16 Nov 2019 03:10:20 GMT
+3004 DEBUG [2019-11-16 11:10:16]  Content-Type:application/json;charset=UTF-8
+3004 DEBUG [2019-11-16 11:10:16]  Transfer-Encoding:chunked
+3004 DEBUG [2019-11-16 11:10:16]  Connection:keep-alive
+3004 DEBUG [2019-11-16 11:10:16]  Vary:Accept-Encoding
+3006 WARN  [2019-11-16 11:10:16]  Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+3007 DEBUG [2019-11-16 11:10:16]  {"api_rate_limits":[{"api":"/statuses/update","limit":15,"limit_time_unit":"HOURS","remaining_hits":15},{"api":"/comments/create","limit":15,"limit_time_unit":"HOURS","remaining_hits":15},{"api":"/direct_messages/new","limit":15,"limit_time_unit":"HOURS","remaining_hits":15},{"api":"/friendships/create","limit":15,"limit_time_unit":"DAYS","remaining_hits":15},{"api":"/statuses/update","limit":50,"limit_time_unit":"DAYS","remaining_hits":50},{"api":"/comments/create","limit":50,"limit_time_unit":"DAYS","remaining_hits":50},{"api":"/users/query","limit":15,"limit_time_unit":"DAYS","remaining_hits":15},{"api":"/users/query","limit":500,"limit_time_unit":"HOURS","remaining_hits":500},{"api":"/users/query","limit":1000,"limit_time_unit":"DAYS","remaining_hits":1000},{"api":"/users/query","limit":50,"limit_time_unit":"MINUTES","remaining_hits":50}],"ip_limit":1000,"limit_time_unit":"HOURS","remaining_ip_hits":1000,"remaining_user_hits":150,"reset_time":"2019-11-16 12:00:00","reset_time_in_seconds":2979,"user_limit":150}
+
+3011 INFO  [2019-11-16 11:10:16]  RateLimitStatus [ipLimit=1000, remainingIpHits=1000, remainingUserHits=150, resetTime=2019-11-16 12:00:00, resetTimeInSeconds=2979, userLimit=150, apiRateLimit=[api_rate_limits [api=/statuses/update, limit=15, limitTimeUnit=HOURS, remainingHits=15], api_rate_limits [api=/comments/create, limit=15, limitTimeUnit=HOURS, remainingHits=15], api_rate_limits [api=/direct_messages/new, limit=15, limitTimeUnit=HOURS, remainingHits=15], api_rate_limits [api=/friendships/create, limit=15, limitTimeUnit=DAYS, remainingHits=15], api_rate_limits [api=/statuses/update, limit=50, limitTimeUnit=DAYS, remainingHits=50], api_rate_limits [api=/comments/create, limit=50, limitTimeUnit=DAYS, remainingHits=50], api_rate_limits [api=/users/query, limit=15, limitTimeUnit=DAYS, remainingHits=15], api_rate_limits [api=/users/query, limit=500, limitTimeUnit=HOURS, remainingHits=500], api_rate_limits [api=/users/query, limit=1000, limitTimeUnit=DAYS, remainingHits=1000], api_rate_limits [api=/users/query, limit=50, limitTimeUnit=MINUTES, remainingHits=50]]]
+3012 DEBUG [2019-11-16 11:10:16]  Request:
+3013 DEBUG [2019-11-16 11:10:16]  GET:https://api.weibo.com/2/statuses/home_timeline.json
+3013 DEBUG [2019-11-16 11:10:16]  Authorization: OAuth2 2.007NF7NG2ao8gC39afd3fb4fNgZwhD
+3013 DEBUG [2019-11-16 11:10:16]  API-RemoteIP: 192.168.1.13
+3060 DEBUG [2019-11-16 11:10:16]  Response:
+3060 DEBUG [2019-11-16 11:10:16]  https StatusCode:403
+3060 DEBUG [2019-11-16 11:10:16]  Server:nginx/1.6.1
+3060 DEBUG [2019-11-16 11:10:16]  Date:Sat, 16 Nov 2019 03:10:20 GMT
+3060 DEBUG [2019-11-16 11:10:16]  Content-Type:application/json;charset=UTF-8
+3060 DEBUG [2019-11-16 11:10:16]  Transfer-Encoding:chunked
+3060 DEBUG [2019-11-16 11:10:16]  Connection:keep-alive
+3060 DEBUG [2019-11-16 11:10:16]  Api-Server-IP:10.39.58.36
+3061 DEBUG [2019-11-16 11:10:16]  Vary:Accept-Encoding
+3061 WARN  [2019-11-16 11:10:16]  Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+3061 DEBUG [2019-11-16 11:10:16]  {"error":"User requests out of rate limit!","error_code":10023,"request":"/2/statuses/home_timeline.json"}
+
+0    DEBUG [2019-11-16 11:12:37]  Request:
+0    DEBUG [2019-11-16 11:12:37]  GET:https://api.weibo.com/2/account/rate_limit_status.json
+32   DEBUG [2019-11-16 11:12:37]  Authorization: OAuth2 2.007NF7NG2ao8gC39afd3fb4fNgZwhD
+33   DEBUG [2019-11-16 11:12:37]  API-RemoteIP: 192.168.1.13
+3283 DEBUG [2019-11-16 11:12:41]  Response:
+3283 DEBUG [2019-11-16 11:12:41]  https StatusCode:200
+3283 DEBUG [2019-11-16 11:12:41]  Server:nginx/1.6.1
+3283 DEBUG [2019-11-16 11:12:41]  Date:Sat, 16 Nov 2019 03:12:45 GMT
+3283 DEBUG [2019-11-16 11:12:41]  Content-Type:application/json;charset=UTF-8
+3283 DEBUG [2019-11-16 11:12:41]  Transfer-Encoding:chunked
+3283 DEBUG [2019-11-16 11:12:41]  Connection:keep-alive
+3283 DEBUG [2019-11-16 11:12:41]  Vary:Accept-Encoding
+3285 WARN  [2019-11-16 11:12:41]  Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+3285 DEBUG [2019-11-16 11:12:41]  {"api_rate_limits":[{"api":"/statuses/update","limit":15,"limit_time_unit":"HOURS","remaining_hits":15},{"api":"/comments/create","limit":15,"limit_time_unit":"HOURS","remaining_hits":15},{"api":"/direct_messages/new","limit":15,"limit_time_unit":"HOURS","remaining_hits":15},{"api":"/friendships/create","limit":15,"limit_time_unit":"DAYS","remaining_hits":15},{"api":"/statuses/update","limit":50,"limit_time_unit":"DAYS","remaining_hits":50},{"api":"/comments/create","limit":50,"limit_time_unit":"DAYS","remaining_hits":50},{"api":"/users/query","limit":15,"limit_time_unit":"DAYS","remaining_hits":15},{"api":"/users/query","limit":500,"limit_time_unit":"HOURS","remaining_hits":500},{"api":"/users/query","limit":1000,"limit_time_unit":"DAYS","remaining_hits":1000},{"api":"/users/query","limit":50,"limit_time_unit":"MINUTES","remaining_hits":50}],"ip_limit":1000,"limit_time_unit":"HOURS","remaining_ip_hits":1000,"remaining_user_hits":150,"reset_time":"2019-11-16 12:00:00","reset_time_in_seconds":2834,"user_limit":150}
+
+3290 INFO  [2019-11-16 11:12:41]  RateLimitStatus [ipLimit=1000, remainingIpHits=1000, remainingUserHits=150, resetTime=2019-11-16 12:00:00, resetTimeInSeconds=2834, userLimit=150, apiRateLimit=[api_rate_limits [api=/statuses/update, limit=15, limitTimeUnit=HOURS, remainingHits=15], api_rate_limits [api=/comments/create, limit=15, limitTimeUnit=HOURS, remainingHits=15], api_rate_limits [api=/direct_messages/new, limit=15, limitTimeUnit=HOURS, remainingHits=15], api_rate_limits [api=/friendships/create, limit=15, limitTimeUnit=DAYS, remainingHits=15], api_rate_limits [api=/statuses/update, limit=50, limitTimeUnit=DAYS, remainingHits=50], api_rate_limits [api=/comments/create, limit=50, limitTimeUnit=DAYS, remainingHits=50], api_rate_limits [api=/users/query, limit=15, limitTimeUnit=DAYS, remainingHits=15], api_rate_limits [api=/users/query, limit=500, limitTimeUnit=HOURS, remainingHits=500], api_rate_limits [api=/users/query, limit=1000, limitTimeUnit=DAYS, remainingHits=1000], api_rate_limits [api=/users/query, limit=50, limitTimeUnit=MINUTES, remainingHits=50]]]
+3291 DEBUG [2019-11-16 11:12:41]  Request:
+3291 DEBUG [2019-11-16 11:12:41]  GET:https://api.weibo.com/2/statuses/friends_timeline.json
+3292 DEBUG [2019-11-16 11:12:41]  Authorization: OAuth2 2.007NF7NG2ao8gC39afd3fb4fNgZwhD
+3292 DEBUG [2019-11-16 11:12:41]  API-RemoteIP: 192.168.1.13
+3545 DEBUG [2019-11-16 11:12:41]  Response:
+3545 DEBUG [2019-11-16 11:12:41]  https StatusCode:403
+3545 DEBUG [2019-11-16 11:12:41]  Server:nginx/1.6.1
+3545 DEBUG [2019-11-16 11:12:41]  Date:Sat, 16 Nov 2019 03:12:45 GMT
+3545 DEBUG [2019-11-16 11:12:41]  Content-Type:application/json;charset=UTF-8
+3545 DEBUG [2019-11-16 11:12:41]  Transfer-Encoding:chunked
+3545 DEBUG [2019-11-16 11:12:41]  Connection:keep-alive
+3545 DEBUG [2019-11-16 11:12:41]  Api-Server-IP:10.22.6.26
+3545 DEBUG [2019-11-16 11:12:41]  Vary:Accept-Encoding
+3545 WARN  [2019-11-16 11:12:41]  Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+3545 DEBUG [2019-11-16 11:12:41]  {"error":"User requests out of rate limit!","error_code":10023,"request":"/2/statuses/friends_timeline.json"}
+
