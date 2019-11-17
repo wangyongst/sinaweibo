@@ -11,15 +11,16 @@ import java.util.List;
 public class MyTest {
 
     private static String accessToken = "2.007NF7NG2ao8gC39afd3fb4fNgZwhD";
-    private static String commentsText = "不如来跟我学编程啊！http://t.cn/AirY4ViD";
+    private static String commentsText = "不如来跟我学编程啊！http://t.cn/AirY4ViD  https://weibo.com/5695105940/IgkoWcpob";
 
     public static void main(String[] args) throws InterruptedException {
         while (true) {
-            RateLimitStatus rateLimitStatus = getAcccountRateLimitStatus();
             StatusWapper statusWapper = getFriendsTimeline();
             for (Status status : statusWapper.getStatuses()) {
+                Thread.sleep(120000);
                 createComments(commentsText, status.getId());
-                Thread.sleep(240000);
+                Thread.sleep(120000);
+
             }
         }
     }
