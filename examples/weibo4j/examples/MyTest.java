@@ -16,13 +16,13 @@ public class MyTest {
     public static void main(String[] args) {
         while (true) {
             try {
+                Thread.sleep(240000);
                 StatusWapper statusWapper = getFriendsTimeline();
                 for (Status status : statusWapper.getStatuses()) {
                     Thread.sleep(120000);
                     createComments(commentsText, status.getId());
                     Thread.sleep(120000);
                 }
-                Thread.sleep(240000);
             } catch (Exception e) {
                 e.printStackTrace();
             }
