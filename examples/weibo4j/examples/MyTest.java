@@ -11,16 +11,20 @@ import java.util.List;
 public class MyTest {
 
     private static String accessToken = "2.007NF7NG2ao8gC39afd3fb4fNgZwhD";
-    private static String commentsText = "不如来跟我学编程啊！http://t.cn/AirY4ViD  https://weibo.com/5695105940/IgkoWcpob";
+    private static String commentsText = "不如来跟我学编程啊！https://s.taobao.com/search?q=%E5%85%A8%E6%B0%91%E5%AD%A6%E7%BC%96%E7%A8%8B%E4%B9%8BJava%E7%AF%87&imgfile=&js=1&stats_click=search_radio_all%3A1&initiative_id=staobaoz_20191121&ie=utf8 https://search.jd.com/Search?keyword=%E5%85%A8%E6%B0%91%E5%AD%A6%E7%BC%96%E7%A8%8B%E4%B9%8BJava%E7%AF%87&enc=utf-8&pvid=7e9a43ab8b2b4d24ab26a2fbfc9a4971";
 
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) {
         while (true) {
-            StatusWapper statusWapper = getFriendsTimeline();
-            for (Status status : statusWapper.getStatuses()) {
-                Thread.sleep(120000);
-                createComments(commentsText, status.getId());
-                Thread.sleep(120000);
-
+            try {
+                StatusWapper statusWapper = getFriendsTimeline();
+                for (Status status : statusWapper.getStatuses()) {
+                    Thread.sleep(120000);
+                    createComments(commentsText, status.getId());
+                    Thread.sleep(120000);
+                }
+                Thread.sleep(240000);
+            } catch (Exception e) {
+                e.printStackTrace();
             }
         }
     }
